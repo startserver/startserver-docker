@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:4
 
-ENV SERVER_PORT 5678
+ENV SERVER_PORT 8085
 
 MAINTAINER xdf<xudafeng@126.com>
 
@@ -10,6 +10,6 @@ EXPOSE $SERVER_PORT
 
 COPY . /src
 
-WORKDIR /src
+WORKDIR /home
 
 ENTRYPOINT ["/src/entrypoint.sh"]
